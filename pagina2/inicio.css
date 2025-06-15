@@ -1,0 +1,340 @@
+/* ======== RESET GENERAL ======== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f4ef;
+  color: #2c2c2c;
+}
+
+/* ======== HEADER ======== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0e8e0;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo img {
+  max-height: 60px;
+}
+
+.search-form {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+  gap: 10px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-form button {
+  padding: 8px 15px;
+  background-color: #5a3d2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.account-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.account-buttons button {
+  padding: 8px 15px;
+  background-color: #7a5c4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ======== NAVEGACIÓN ======== */
+.navegacion {
+  background-color: #5a2a1b;
+}
+
+.navegacion ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.navegacion a {
+  color: #f0e8e0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navegacion a:hover {
+  text-decoration: underline;
+}
+
+/* ======== SECCIÓN BIENVENIDA ======== */
+.bienvenida {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+.bienvenida h1 {
+  color: #5a2a1b;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.bienvenida p {
+  font-size: 20px;
+}
+
+/* ======== DESTACADOS ======== */
+.destacados h2 {
+  text-align: center;
+  color: #5a2a1b;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 0 20px 50px;
+}
+
+.productos-1,
+.productos-2,
+.productos-3 {
+  background-color: #fffdfb;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.productos-1 img,
+.productos-2 img,
+.productos-3 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.productos-container h3 {
+  margin: 10px 0;
+  color: #8b2e1d;
+}
+
+.productos-container p {
+  font-size: 16px;
+}
+
+/* INFO */
+.info {
+  background-color: #fffdfb;
+  padding: 40px 20px;
+  border-top: 2px solid #5a2a1b;
+  border-bottom: 2px solid #5a2a1b;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.info h2 {
+  font-size: 2.2rem;
+  color: #5a2a1b;
+  margin-bottom: 20px;
+}
+
+.info ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+  padding: 0;
+  margin: 20px auto 0;
+  max-width: 800px;
+}
+
+.info li {
+  font-size: 1.2rem;
+  color: #2c2c2c;
+  background-color: #f9f4ef;
+  padding: 15px 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* ======== FOOTER ======== */
+.footer-container {
+  background-color: #5a2a1b;
+  color: #f0e8e0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer-container div {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-container h3 {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f0e8e0;
+  padding-bottom: 5px;
+}
+
+.footer-container p {
+  margin: 20px;
+}
+
+
+.footer-container iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 8px;
+}
+
+/*CELULAR*/
+@media screen and (max-width: 767px) { 
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .search-form {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .account-buttons {
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .navegacion ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .container-padre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hijo-1 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .productos-1 img,
+  .productos-2 img,
+  .productos-3 img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .productos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .productos-1,
+  .productos-2,
+  .productos-3 {
+    width: 90%;
+  }
+
+  .info ul {
+  flex-direction: column;
+  gap: 15px;
+  } 
+
+  .info li {
+  padding: 12px 20px;
+  font-size: 1rem;
+  }
+
+  .footer-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  }
+
+  .footer-container iframe {
+    width: 100%;
+    height: 200px;
+  }
+  }
+
+/*TABLETS*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .productos-container{
+  max-height: 400%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  }
+
+  .productos-1 img,
+  .productos-2 img,
+  .productos-3 img {
+    height: 300px;
+  }
+
+  .navegacion ul {
+    gap: 30px;
+    flex-wrap: wrap; 
+  }
+
+  .hijo-1 img {
+    max-width: 350px;
+  }
+
+  .hijo-2 h1 {
+    font-size: 2rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

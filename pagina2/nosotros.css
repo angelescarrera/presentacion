@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f4ef;
+  color: #2c2c2c;
+}
+ 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0e8e0;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.logo img {
+  max-height: 60px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  max-width: 500px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-form button {
+  padding: 8px 15px;
+  background-color: #5a3d2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.account-buttons {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.account-buttons button {
+  padding: 8px 15px;
+  background-color: #7a5c4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navegacion{
+  background-color:  #5a2a1b;
+}
+
+.navegacion ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.navegacion li a {
+  color: #f0e8e0;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navegacion li a:hover {
+  text-decoration: underline;
+}
+
+.fondo-vinedos {
+  position: relative;
+  background-image: url('../pagina2/IMG/viñedos.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.fondo-vinedos::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 0;
+}
+
+.fondo-vinedos > * {
+  position: relative;
+  z-index: 1;
+}
+
+.fondo-vinedos h1,
+.fondo-vinedos h2,
+.fondo-vinedos p {
+  color: white;
+  text-align: center;
+}
+
+.quienes-somos,
+.mision,
+.vision {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-container {
+  background-color: #5a2a1b;
+  color: #f0e8e0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer-container div {
+  flex: 1 1 250px;
+}
+
+.footer-container h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #f0e8e0;
+  padding-bottom: 5px;
+}
+
+.footer-container p {
+  margin: 20px;
+}
+
+.footer-container iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 8px;
+}
+
+/*Celular*/
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .search-form {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .account-buttons {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .container-padre {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  }
+
+  .navegacion ul {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navegacion li{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mision-vision {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mision, .vision {
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+
+  .quienes-somos {
+    text-align: left;
+  }
+
+  .quienes-somos h2 {
+    text-align: center;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .search-form {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    max-width: 600px;
+  }
+
+  .account-buttons {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navegacion ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .mision-vision {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .quienes-somos,
+  .mision,
+  .vision {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-container div {
+    max-width: 90%;
+  }
+}
