@@ -1,10 +1,18 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f4ef;
-  color: #2c2c2c;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
- 
+
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f4ef;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -15,82 +23,45 @@ body {
   gap: 15px;
 }
 
-.logo {
-  flex-shrink: 0;
-}
 
-.logo img {
-  max-height: 60px;
-}
-
-.search-form {
+.navegacion {
   display: flex;
-  gap: 10px;
-  flex: 1;
-  max-width: 500px;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#5a2a1b;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
 }
 
-.search-form input {
-  flex: 1;
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
 
-.search-form button {
-  padding: 8px 15px;
-  background-color: #5a3d2b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.account-buttons {
+.navegacion ul {
   display: flex;
-  gap: 10px;
-  flex-shrink: 0;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex: 1;
 }
 
-.account-buttons button {
-  padding: 8px 15px;
-  background-color: #7a5c4d;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.navegacion{
-  background-color:  #5a2a1b;
-}
-
-.navegacion ul{
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    padding: 10px 0;
-    list-style: none; 
-}
-
-.navegacion li a {
-  color: #f0e8e0;
+.navegacion ul li a {
   text-decoration: none;
-  font-size: 18px;
+  color:#f9f4ef;
+  font-size: 16px;
+  transition: color 0.3s;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
 }
 
-.navegacion li a:hover {
-  text-decoration: underline;
+.navegacion ul li a:hover {
+  color: #fdd9c1;
 }
 
 
 main {
   padding: 40px 20px;
-  background-color: #f0e8e0;
+  background-color: #f9f4ef
 }
 
 .container-padre {
@@ -114,15 +85,17 @@ main {
 }
 
 .hijo-2 h1 {
-  font-size: 40px;
+  font-size: 35px;
   color: #5a2a1b;
   margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hijo-2 p {
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 16px;
   margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .titulomedio {
@@ -130,13 +103,9 @@ main {
   color: #5a2a1b;
   margin: 50px 0 30px;
   font-size: 30px;
+  font-family: 'Poppins', sans-serif;
 }
 
-
-main {
-  padding: 40px 20px;
-  background-color: #f0e8e0;
-}
 
 .container-padre {
   display: flex;
@@ -172,11 +141,11 @@ main {
 
 .titulomedio {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
   color: #5a2a1b;
   margin: 50px 0 50px;
-  font-family: 'Segoe UI',sans-serif UI'
+  font-family: 'Poppins', sans-serif;
 }
 
 .productos-container {
@@ -218,83 +187,128 @@ main {
   margin-top: 0;
 }
 
-.productos-1 p,
-.productos-2 p,
-.productos-3 p {
-  font-size: 15px;
+.descripcion {
+  font-size: 16px;
   line-height: 1.5;
 }
 
-ul {
+.ul {
   list-style-type: none;
   padding-left: 0;
   }
 
-.titulomedio{
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
+footer {
+  background-color:  #5a2a1b;
+  color: #f0e8e0;
+  padding: 20px 15px;
 }
 
-.productos-container{
-  flex-direction: row;
-  align-items: center;
-  display: flex;
-}
 
 .footer-container {
-  background-color: #5a2a1b;
-  color: #f0e8e0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: flex-start;
-  padding: 40px 20px;
-  gap: 20px;
-  font-family: 'Segoe UI', sans-serif;
+  gap: 20;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
-  font-size: 20px;
 }
 
-.footer-container div {
-  flex: 1 1 250px;
+
+.footer-section h3 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 12px;           
+  font-size: 1.2rem;              
+  font-weight: 600;               
+  border-bottom: 1px solid #f0e8e0; 
+  padding-bottom: 6px;                 
 }
 
-.footer-container h3 {
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li {
   margin-bottom: 10px;
-  font-size: 1.2rem;
-  border-bottom: 1px solid #f0e8e0;
-  padding-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.footer-container p {
-  margin: 20px;
+.footer-menu a {
+  color: #f0e8e0;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
-.footer-container iframe {
+.footer-menu a:hover {
+  color: #ffd8a8;
+}
+
+.preguntas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.preguntas li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #e0e0e0;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.preguntas li:hover {
+  color: #ffd8a8;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #f0e8e0;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffd8a8;
+}
+
+/* Mapa */
+
+.footer-section iframe {
   width: 100%;
-  height: 200px;
+  max-width: 300px;
+  height: 140px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+  .copyright {
+  background-color: #5a2a1b;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  border-top: 1px solid #fdd9c1;
+ }
+ 
 /*CELULAR*/
 @media screen and (max-width: 767px) { 
   .header {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-  }
-
-  .search-form {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .account-buttons {
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
   }
 
   .navegacion ul {
@@ -376,9 +390,12 @@ ul {
     max-width: 350px;
   }
 
-  .hijo-2 h1 {
-    font-size: 2rem;
+  .descripcion {
+    font-size: 16px; 
   }
+  /* .hijo-2 h1 {
+    font-size: 2rem;
+  } */
 
   .footer-container {
     flex-direction: column;

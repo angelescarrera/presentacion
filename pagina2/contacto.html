@@ -5,24 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contacto | Tienda de Vinos</title>
   <link rel="stylesheet" href="contacto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header class="header">
-    <div class="logo">
-    <img src="IMG/logo.png" alt="logo">
-    </div>
-
-    <form class="search-form" action="#" method="get">
-    <input type="text" placeholder="Buscar..." name="buscador">
-    <button type="submit">Buscar</button>
-    </form>
-
-    <div class="account-buttons">
-    <button>Crear cuenta</button>
-    <button>Ingresar</button>
-    </div>
-    </header>
-
   <nav class="navegacion">
     <ul>
     <li><a href="inicio.html">Inicio</a></li>
@@ -35,7 +20,7 @@
 
   <main class="contacto">
     <h1>Contacto</h1>
-    <p>¿Tenés alguna consulta? Escribinos y te responderemos a la brevedad.</p>
+    <p class="duda"> ¿Tenés alguna consulta? Escribinos y te responderemos a la brevedad.</p>
 
     <div class="contacto-container">
       <form class="formulario">
@@ -55,22 +40,40 @@
     </div>
   </main>
   
-  <footer>
-  <div class="footer-container">
-  <div class="menu">
-    <h3>Menu</h3>
-    <p>Inicio</p>
-    <p>Nosotros</p>
-    <p>Contacto</p>
-  </div> 
+   <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Menú</h3>
+        <ul class="footer-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="#">Tienda</a></li>
+        </ul>
+      </div>
 
-  <div class="redes">
-  <h3>Seguinos</h3>
-  <p>Instagram</p>
-  <p>facebook</p>  
+    <div class="footer-section">
+        <h3>Preguntas generales</h3>
+        <ul class="preguntas">
+           <li>Medios de envíos</li>
+           <li>Politicas de privacidad</li>
+           <li>Terminos y condiciones</li>
+           <li>Preguntas frecuentes</li>
+      </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Seguinos</h3>
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/549XXXXXXXXXX" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+  &copy; 2025 Dos Vinos. Todos los derechos reservados.
   </div>
-</div>
-</footer>
-
 </body>
 </html>

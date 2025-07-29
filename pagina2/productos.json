@@ -1,0 +1,47 @@
+{
+  "vinos": [
+    {
+      "id": 1,
+      "name": "Benjamín Nieto Chardonnay",
+      "descripcion": "Fresco, untuoso y de equilibrada acidez. Textura suave y buen final de boca.",
+      "precio": 6200,
+      "img": "IMG/benjamin-nieto.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Cordero con Piel de Lobo Malbec",
+      "descripcion": "Un Malbec joven muy bien elaborado, diferente por su aroma y sabor a frutos maduros.",
+      "precio": 6300,
+      "img": "IMG/pieldelobo.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Fran Chardonnay",
+      "descripcion": "Se conjugan perfumes a frutas, manzanas, ananás y leves aromas tostados característicos del añejamiento en roble.",
+      "precio": 7200,
+      "img": "IMG/fran-chardonnay.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Otro loco más",
+      "descripcion": "Aroma agradable con notas sobresalientes de frutos rojos y vainilla. Buen aporte del roble.",
+      "precio": 6000,
+      "img": "IMG/otro-locomas.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Saint Felicien Cabernet",
+      "descripcion": "De impacto dulce y gran complejidad, de buen cuerpo, con taninos suaves y redondos.",
+      "precio": 9393,
+      "img": "IMG/saint-felicien.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Emilia Nieto Senetiner",
+      "descripcion": "En nariz, posee una intensa frescura brindada por los aromas a frutos rojos y negros.",
+      "precio": 8300,
+      "img": "IMG/emilia-rose.jpeg"
+    }
+  ]
+}
+

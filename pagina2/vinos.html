@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="vinos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
   <body>
-  <header class="header">
+  <!-- <header class="header">
     <div class="logo">
     <img src="IMG/logo.png" alt="logo">
     </div>
@@ -21,7 +23,7 @@
     <button>Crear cuenta</button>
     <button>Ingresar</button>
     </div>
-    </header>
+    </header> -->
 
   <nav class="navegacion">
     <ul>
@@ -33,77 +35,50 @@
     </ul>
   </nav>
 
-  <main class="catalogo">
-    <div class="vino">
-      <img src="../pagina2/IMG/Benjamín Nieto Chardonnay.jpeg" alt="Benjamín Nieto Chardonnay">
-      <h2>Benjamín Nieto Chardonnay</h2>
-      <p>Fresco, untuoso y de equilibrada acidez. Textura suave y buen final de boca.</p>
-      <span class="precio">$6.200</span>
-      <button class="btn-carrito">Agregar al carrito</button>
-    </div>
-
-    <div class="vino">
-      <img src="../pagina2/IMG/Cordero con Piel de Lobo Malbec.jpeg" alt="Cordero con piel de Lobo">
-      <h2>Cordero con Piel de Lobo Malbec</h2>
-      <p>Un Malbec joven muy bien elaborado, diferente por su aroma y sabor a frutos maduros.</p>
-      <span class="precio">$6.300</span>
-      <button class="btn-carrito">Agregar al carrito</button>
-    </div>
-
-    <div class="vino">
-      <img src="../pagina2/IMG/Fran Chardonnay.jpeg" alt="Fran Chardonnay">
-      <h2>Fran Chardonnay</h2>
-      <p>Se conjugan perfumes a frutas, manzanas, ananás y leves aromas tostados característicos del añejamiento en roble.</p>
-      <span class="precio">$7.200</span>
-      <button class="btn-carrito">Agregar al carrito</button>
-    </div>
-     
-    <div class="vino">
-        <img src="../pagina2/IMG/Otro loco mas.jpeg" alt="Otro loco mas">
-        <h2>Otro loco más</h2>
-        <p>Aroma agradable con notas sobresalientes de frutos rojos y vainilla. Buen aporte del roble.</p>
-        <span class="precio">$6.000</span>
-      <button class="btn-carrito">Agregar al carrito</button>
-    </div>
-
-    <div class="vino">
-    <img src="../pagina2/IMG/Saint Felicien Cabernet Merlot.jpeg" alt="Saint Felicien Cabernet Merlot">
-    <h2>Saint Felicien Cabernet Merlot</h2>
-    <p>En boca, de impacto dulce y gran complejidad, es untuoso, de buen cuerpo, con taninos suaves y redondos, de final largo y persistente.</p>
-    <span class="precio">$9.393</span>
-    <button class="btn-carrito">Agregar al carrito</button> 
-    </div>
-
-    <div class="vino">
-    <img src="../pagina2/IMG/vino emilia rose.jpeg" alt="Emilia rose">
-    <h2>Emilia Nieto Senetiner</h2>
-    <p> En nariz, posee una intensa frescura brindada por los aromas a frutos rojos y negros.</p>
-    <span class="precio">$8.300</span>
-    <button class="btn-carrito">Agregar al carrito</button> 
-    </div>
-    </main>
-    
+  <h1 class="titulo-vino">Lista de Vinos</h1>
+  <div id="contenedor-vinos"></div>
+  
   <footer>
     <div class="footer-container">
-      <div class="menu">
+      <div class="footer-section">
         <h3>Menú</h3>
-        <p>Inicio</p>
-        <p>Nosotros</p>
-        <p>Contacto</p>
+        <ul class="footer-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="#">Tienda</a></li>
+        </ul>
       </div>
 
-      <div class="mapa">
-        <h3>Cómo llegar</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12410.710172752079!2d-68.0798748!3d-38.9541944!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33ce779a5b9d%3A0x1c81c39fc1c87424!2sPortento!5e0!3m2!1ses-419!2sar!4v1746203794445!5m2!1ses-419!2sar" frameborder="0"></iframe>
+    <div class="footer-section">
+        <h3>Preguntas generales</h3>
+        <ul class="preguntas">
+           <li>Medios de envíos</li>
+           <li>Politicas de privacidad</li>
+           <li>Terminos y condiciones</li>
+           <li>Preguntas frecuentes</li>
+      </ul>
       </div>
-      
-      <div class="redes">
+
+      <div class="footer-section">
+        <h3>Cómo llegar</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12410.710172752079!2d-68.0798748!3d-38.9541944!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33ce779a5b9d%3A0x1c81c39fc1c87424!2sPortento!5e0!3m2!1ses-419!2sar!4v1746203794445!5m2!1ses-419!2sar" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <div class="footer-section">
         <h3>Seguinos</h3>
-        <p>Instagram</p>
-        <p>Facebook</p>
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/549XXXXXXXXXX" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
       </div>
     </div>
   </footer>
+  <script src="./main.js"></script>
+  <div class="copyright">
+  &copy; 2025 Dos Vinos. Todos los derechos reservados.
+  </div>
 </body>
 </html>
 
