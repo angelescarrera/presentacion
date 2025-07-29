@@ -323,17 +323,17 @@ footer {
   }
 
  .footer-container {
-    gap: 10px; /* Reducí el espacio entre secciones */
-    padding: 10px 0; /* Reducí el padding vertical */
+    gap: 10px; 
+    padding: 10px 0; 
   }
 
   .footer-section {
-    margin-bottom: 10px; /* Reducí el espacio entre cada sección */
+    margin-bottom: 10px; 
   }
 
   .footer-section h3 {
     margin-bottom: 6px;
-    font-size: 1rem; /* Tamaño más chico del título */
+    font-size: 1rem; 
   }
 
   .footer-menu li,

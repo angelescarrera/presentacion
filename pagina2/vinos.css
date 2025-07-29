@@ -291,7 +291,6 @@ footer {
     margin-bottom: 10px;
   }
 
-  /* Extra: fuerza el contenido interno a ir en columna */
   .footer-section {
     display: flex;
     flex-direction: column;
