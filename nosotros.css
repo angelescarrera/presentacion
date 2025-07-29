@@ -98,7 +98,7 @@ body {
 
 .fondo-vinedos {
   position: relative;
-  background-image: url('../pagina2/IMG/viñedos.jpg');
+  background-image: url('./IMG/viñedos.jpg');
   background-size: cover;
   background-position: center;
   color: white;
